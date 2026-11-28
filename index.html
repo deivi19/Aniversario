@@ -1,20 +1,28 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Salome & Deivi — 1 Año Juntos ❤️</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Poppins:wght@300;400;500;600&display=swap"
+    rel="stylesheet">
   <style>
     :root {
-      --rose: #c9b1e0;        /* lila medio */
-      --rose-deep: #9b7bb8;   /* lila profundo */
-      --blush: #f0e9f8;       /* lila muy claro */
-      --cream: #f5f0fa;       /* fondo principal lila suave */
+      --rose: #c9b1e0;
+      /* lila medio */
+      --rose-deep: #9b7bb8;
+      /* lila profundo */
+      --blush: #f0e9f8;
+      /* lila muy claro */
+      --cream: #f5f0fa;
+      /* fondo principal lila suave */
       --gold: #c9a87c;
-      --wine: #6b4c8a;        /* lila oscuro para títulos */
+      --wine: #6b4c8a;
+      /* lila oscuro para títulos */
       --text: #3a2d4a;
       --soft: #ebe4f5;
     }
@@ -63,12 +71,15 @@
         transform: translateY(0) rotate(0deg) scale(0.6);
         opacity: 0;
       }
+
       10% {
         opacity: 0.7;
       }
+
       90% {
         opacity: 0.5;
       }
+
       100% {
         transform: translateY(-110vh) rotate(720deg) scale(1.1);
         opacity: 0;
@@ -87,7 +98,9 @@
       margin: 0 auto;
     }
 
-    h1, h2, h3 {
+    h1,
+    h2,
+    h3 {
       font-family: 'Playfair Display', serif;
     }
 
@@ -125,7 +138,7 @@
       position: absolute;
       width: 600px;
       height: 600px;
-      background: radial-gradient(circle, rgba(201,177,224,0.25) 0%, transparent 70%);
+      background: radial-gradient(circle, rgba(201, 177, 224, 0.25) 0%, transparent 70%);
       top: -150px;
       right: -150px;
       border-radius: 50%;
@@ -136,7 +149,7 @@
       position: absolute;
       width: 400px;
       height: 400px;
-      background: radial-gradient(circle, rgba(212,165,116,0.15) 0%, transparent 70%);
+      background: radial-gradient(circle, rgba(212, 165, 116, 0.15) 0%, transparent 70%);
       bottom: -100px;
       left: -100px;
       border-radius: 50%;
@@ -149,7 +162,7 @@
 
     .anniversary-badge {
       display: inline-block;
-      background: rgba(255,255,255,0.7);
+      background: rgba(255, 255, 255, 0.7);
       backdrop-filter: blur(8px);
       padding: 8px 22px;
       border-radius: 50px;
@@ -158,7 +171,7 @@
       text-transform: uppercase;
       color: var(--rose-deep);
       margin-bottom: 25px;
-      border: 1px solid rgba(201,177,224,0.4);
+      border: 1px solid rgba(201, 177, 224, 0.4);
       animation: fadeInDown 1.2s ease;
     }
 
@@ -230,18 +243,39 @@
     }
 
     @keyframes fadeInUp {
-      from { opacity: 0; transform: translateY(30px); }
-      to { opacity: 1; transform: translateY(0); }
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
     }
 
     @keyframes fadeInDown {
-      from { opacity: 0; transform: translateY(-20px); }
-      to { opacity: 1; transform: translateY(0); }
+      from {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
     }
 
     @keyframes bounce {
-      0%, 100% { transform: translateX(-50%) translateY(0); }
-      50% { transform: translateX(-50%) translateY(8px); }
+
+      0%,
+      100% {
+        transform: translateX(-50%) translateY(0);
+      }
+
+      50% {
+        transform: translateX(-50%) translateY(8px);
+      }
     }
 
     /* ========== SECTION TITLES ========== */
@@ -422,8 +456,8 @@
       background: #fffef9;
       padding: 50px 40px 60px;
       border-radius: 4px;
-      box-shadow: 
-        0 2px 4px rgba(0,0,0,0.02),
+      box-shadow:
+        0 2px 4px rgba(0, 0, 0, 0.02),
         0 10px 40px rgba(155, 123, 184, 0.1),
         inset 0 0 0 1px rgba(212, 165, 116, 0.15);
       position: relative;
@@ -580,7 +614,7 @@
       font-weight: 600;
       border: none;
       cursor: pointer;
-      box-shadow: 0 10px 35px rgba(0,0,0,0.12);
+      box-shadow: 0 10px 35px rgba(0, 0, 0, 0.12);
       transition: all 0.4s ease;
       display: inline-flex;
       align-items: center;
@@ -589,7 +623,7 @@
 
     .btn-love:hover {
       transform: scale(1.06);
-      box-shadow: 0 15px 45px rgba(0,0,0,0.18);
+      box-shadow: 0 15px 45px rgba(0, 0, 0, 0.18);
     }
 
     /* Confetti / hearts burst */
@@ -606,6 +640,7 @@
         transform: translate(0, 0) scale(0) rotate(0deg);
         opacity: 1;
       }
+
       100% {
         transform: translate(var(--tx), var(--ty)) scale(1.2) rotate(var(--rot));
         opacity: 0;
@@ -643,8 +678,15 @@
     }
 
     @keyframes pulse {
-      0%, 100% { box-shadow: 0 0 0 0 rgba(155, 123, 184, 0.4); }
-      50% { box-shadow: 0 0 0 12px rgba(155, 123, 184, 0); }
+
+      0%,
+      100% {
+        box-shadow: 0 0 0 0 rgba(155, 123, 184, 0.4);
+      }
+
+      50% {
+        box-shadow: 0 0 0 12px rgba(155, 123, 184, 0);
+      }
     }
 
     /* Responsive */
@@ -652,31 +694,33 @@
       .timeline::before {
         left: 18px;
       }
+
       .timeline-item {
         padding-left: 60px;
       }
+
       .timeline-dot {
         left: 6px;
         width: 24px;
         height: 24px;
       }
+
       .letter-wrapper {
         padding: 35px 24px 45px;
         transform: none;
       }
+
       .letter-body {
         font-size: 1.05rem;
       }
     }
   </style>
 </head>
+
 <body>
 
   <!-- Floating Hearts -->
   <div class="hearts-container" id="hearts"></div>
-
-  <!-- Music button (optional) -->
-  <button class="music-btn" id="musicBtn" title="Música">🎵</button>
 
   <!-- ==================== HERO ==================== -->
   <section class="hero">
@@ -712,7 +756,10 @@
           <div class="timeline-card">
             <div class="timeline-date">COMO EMPEZO TODO</div>
             <h3>Nuestra primera charla</h3>
-            <p>Este día no lo puedo olvidar por nada del mundo. Recuerdo que tuvimos nuestra primera charla en el Chorrerón; ahí estabas tú, una pequeña y hermosa niña contando piedritas. Quise ir a hablarte, ya que ambos estábamos algo solos, y fue lo mejor que pude haber hecho, porque desde ese momento todo cambio para mi, y comenzo nuestra gran historia juntos</p>
+            <p>Este día no lo puedo olvidar por nada del mundo. Recuerdo que tuvimos nuestra primera charla en el
+              Chorrerón; ahí estabas tú, una pequeña y hermosa niña contando piedritas. Quise ir a hablarte, ya que
+              ambos estábamos algo solos, y fue lo mejor que pude haber hecho, porque desde ese momento todo cambio para
+              mi, y comenzo nuestra gran historia juntos</p>
           </div>
         </div>
 
@@ -721,7 +768,11 @@
           <div class="timeline-card">
             <div class="timeline-date">PRIMEROS DÍAS</div>
             <h3>Nuestra primera salida juntos</h3>
-            <p>Todo ocurrió esa misma noche, el día en que nos conocimos. No quisimos acompañar a los demás a mirar las procesiones y nos quedamos sentaditos hablando, sin importar que apenas nos estábamos conociendo. Ese día sentí una conexión contigo que no puedo explicar; fue algo mágico, porque contigo pude ser yo desde el primer momento (me encantó un montón haber conocido esa parte loca de ti, y poderme haber acostado en tu regazo)</p>
+            <p>Todo ocurrió esa misma noche, el día en que nos conocimos. No quisimos acompañar a los demás a mirar las
+              procesiones y nos quedamos sentaditos hablando, sin importar que apenas nos estábamos conociendo. Ese día
+              sentí una conexión contigo que no puedo explicar; fue algo mágico, porque contigo pude ser yo desde el
+              primer momento (me encantó un montón haber conocido esa parte loca de ti, y poderme haber acostado en tu
+              regazo)</p>
           </div>
         </div>
 
@@ -730,7 +781,11 @@
           <div class="timeline-card">
             <div class="timeline-date">UN DIA ESPECIAL</div>
             <h3>Nuestro primer beso</h3>
-            <p>Esto pasó cuando estábamos jugando en tu casa. Ya nos habíamos dado algunos pequeños besos por "equivocación", pero ese día ocurrió algo increíble: tú estabas haciéndote la muertita y yo tenía que buscar una manera para revivirte. La unica forma que se me paso por la cabeza para despetarte era besandote, y fue lo mejor que pude haber hecho. Cuando te besé, realmente no sabía qué hacer, y lo único que me pasaba por la mente era un "te amo"</p>
+            <p>Esto pasó cuando estábamos jugando en tu casa. Ya nos habíamos dado algunos pequeños besos por
+              "equivocación", pero ese día ocurrió algo increíble: tú estabas haciéndote la muertita y yo tenía que
+              buscar una manera para revivirte. La unica forma que se me paso por la cabeza para despetarte era
+              besandote, y fue lo mejor que pude haber hecho. Cuando te besé, realmente no sabía qué hacer, y lo único
+              que me pasaba por la mente era un "te amo"</p>
           </div>
         </div>
 
@@ -739,7 +794,11 @@
           <div class="timeline-card">
             <div class="timeline-date">MOMENTOS COTIDIANOS</div>
             <h3>Los días normales que se volvieron mágicos</h3>
-            <p>Esto es lo que más me fascino, porque sin importar qué hiciéramos, cada día que pasamos juntos se volvía único y especial; siempre encontrábamos la manera de divertirnos y de ser nosotros mismos. Tal vez mi memoria sea algo mala, pero siempre llevaré cada uno de esos días en mi corazón. Aún recuerdo cada uno de mis viajes a tu casa; tal vez estaba algo lejos o a veces iba un poco cansado, pero mi corazón siempre me daba fuerzas para ir a tu casa, ya que lo más especial para mí estaba ahí, y esa eres tú</p>
+            <p>Esto es lo que más me fascino, porque sin importar qué hiciéramos, cada día que pasamos juntos se volvía
+              único y especial; siempre encontrábamos la manera de divertirnos y de ser nosotros mismos. Tal vez mi
+              memoria sea algo mala, pero siempre llevaré cada uno de esos días en mi corazón. Aún recuerdo cada uno de
+              mis viajes a tu casa; tal vez estaba algo lejos o a veces iba un poco cansado, pero mi corazón siempre me
+              daba fuerzas para ir a tu casa, ya que lo más especial para mí estaba ahí, y esa eres tú</p>
           </div>
         </div>
 
@@ -748,7 +807,10 @@
           <div class="timeline-card">
             <div class="timeline-date">A PESAR DE LA DISTANCIA</div>
             <h3>Ni los kilómetros pudieron con nosotros</h3>
-            <p>Después de acostumbrarme a verte y tenerte cerca, nos tocó enfrentar la prueba más difícil: estar lejos. No te voy a negar que han sido días en los que te he extrañado muchísimo y en los que daría lo que fuera por ir corriendo a verte como antes. Pero incluso con un océano de por medio, cada llamada, cada mensaje y cada momento juntos me demostraron que lo nuestro es más fuerte que cualquier distancia</p>
+            <p>Después de acostumbrarme a verte y tenerte cerca, nos tocó enfrentar la prueba más difícil: estar lejos.
+              No te voy a negar que han sido días en los que te he extrañado muchísimo y en los que daría lo que fuera
+              por ir corriendo a verte como antes. Pero incluso con un océano de por medio, cada llamada, cada mensaje y
+              cada momento juntos me demostraron que lo nuestro es más fuerte que cualquier distancia</p>
           </div>
         </div>
 
@@ -757,7 +819,10 @@
           <div class="timeline-card">
             <div class="timeline-date">29 DE NOVIEMBRE</div>
             <h3>Nuestro primer aniversario</h3>
-            <p>Y aquí estamos, cumpliendo nuestro primer año juntos desde aquel 29 de noviembre en que decidimos empezar esta historia oficialmente. Gracias por quedarte, por elegirme cada día y por hacerme tan feliz incluso desde lejos. Este es apenas el primer capítulo de todo lo que nos falta por vivir cuando volvamos a estar frente a frente</p>
+            <p>Y aquí estamos, cumpliendo nuestro primer año juntos desde aquel 29 de noviembre en que decidimos empezar
+              esta historia oficialmente. Gracias por quedarte, por elegirme cada día y por hacerme tan feliz incluso
+              desde lejos. Este es apenas el primer capítulo de todo lo que nos falta por vivir cuando volvamos a estar
+              frente a frente</p>
           </div>
         </div>
       </div>
@@ -766,6 +831,7 @@
 
   <!-- ==================== REASONS ==================== -->
   <section class="reasons-section">
+    <section class="reasons-section">
     <div class="container">
       <div class="section-header reveal">
         <span class="script">Porque sí</span>
@@ -784,27 +850,27 @@
         </div>
         <div class="reason-card reveal">
           <div class="reason-number">03</div>
-          <p>Siempre encuentras una manera de hacerme reír, hasta en mis peores días</p>
+          <p>Porque siempre encuentras una manera de hacerme reír, hasta en mis peores días</p>
         </div>
         <div class="reason-card reveal">
           <div class="reason-number">04</div>
-          <p>Porque eliges quedarte, incluso en los días grises</p>
+          <p>Porque cada día me eliges, sin importar si a veces soy difícil</p>
         </div>
         <div class="reason-card reveal">
           <div class="reason-number">05</div>
-          <p>Por la tranquilidad tan bonita que siento al estar a tu lado</p>
+          <p>Porque cada vez que te veo, mi corazón se acelera</p>
         </div>
         <div class="reason-card reveal">
           <div class="reason-number">06</div>
-          <p>Porque cada día me haces sentir las mismas mariposas</p>
+          <p>Porque me tratas como nadie más me había tratado</p>
         </div>
         <div class="reason-card reveal">
           <div class="reason-number">07</div>
-          <p>Por esa niña hermosa que vi contando piedritas en el Chorrerón y que me cambió la vida</p>
+          <p>Porque con una sola charla me hiciste ver el mundo de una manera diferente</p>
         </div>
         <div class="reason-card reveal">
           <div class="reason-number">08</div>
-          <p>Por esa parte loca tuya que conocí desde nuestra primera charla y que me encanta</p>
+          <p>Por esa locura tan grande y hermosa que tienes</p>
         </div>
         <div class="reason-card reveal">
           <div class="reason-number">09</div>
@@ -812,31 +878,31 @@
         </div>
         <div class="reason-card reveal">
           <div class="reason-number">10</div>
-          <p>Por la paz que sentí desde la primera vez que me acosté en tu regazo</p>
+          <p>Porque me cuidaste desde el primer momento</p>
         </div>
         <div class="reason-card reveal">
           <div class="reason-number">11</div>
-          <p>Porque sin importar qué tan lejos quedara tu casa o el cansancio, verte siempre valía cada viaje</p>
+          <p>Porque me volviste parte de tu familia</p>
         </div>
         <div class="reason-card reveal">
           <div class="reason-number">12</div>
-          <p>Por nuestras tardes jugando en tu casa y las veces que te hacías la muertita para que fuera a rescatarte</p>
+          <p>Porque eres tan hermosa que mis ojos brillan con tan solo mirarte</p>
         </div>
         <div class="reason-card reveal">
           <div class="reason-number">13</div>
-          <p>Porque aunque a veces mi memoria me falle, todo lo que vivo contigo se queda guardado en mi corazón</p>
+          <p>Porque me haces sentir que soy tu prioridad en este mundo</p>
         </div>
         <div class="reason-card reveal">
           <div class="reason-number">14</div>
-          <p>Por tu paciencia, tu dulzura y la forma tan sincera en que cuidas lo nuestro</p>
+          <p>Por esa risa tan hermosa y contagiosa que tienes</p>
         </div>
         <div class="reason-card reveal">
           <div class="reason-number">15</div>
-          <p>Porque prefiero mil veces quedarme hablando contigo hasta tarde que cualquier otro plan en el mundo</p>
+          <p>Porque sin importar mi edad, sigues cuidando de mí como tu bebé chiquito</p>
         </div>
         <div class="reason-card reveal">
           <div class="reason-number">16</div>
-          <p>Por cómo me escuchas y me entiendes incluso cuando no sé bien cómo explicar lo que siento</p>
+          <p>Porque estás para mí, hasta en los momentos en los que no sé explicar cómo me siento</p>
         </div>
         <div class="reason-card reveal">
           <div class="reason-number">17</div>
@@ -844,39 +910,39 @@
         </div>
         <div class="reason-card reveal">
           <div class="reason-number">18</div>
-          <p>Por cada llamada y cada mensaje que acortan la distancia y me hacen sentirte cerquita</p>
+          <p>Porque cada llamada y cada mensaje me hacen sentir que estás aquí a mi lado</p>
         </div>
         <div class="reason-card reveal">
           <div class="reason-number">19</div>
-          <p>Porque me inspiras a ser mejor cada día y a dar lo mejor de mí por nosotros</p>
+          <p>Porque me inspiras a ser mejor cada día y a dar lo mejor de mí por lo nuestro</p>
         </div>
         <div class="reason-card reveal">
           <div class="reason-number">20</div>
-          <p>Por tu sonrisa, que tiene el poder de arreglarme cualquier mal momento en segundos</p>
+          <p>Porque te quedaste sin importar cómo soy</p>
         </div>
         <div class="reason-card reveal">
           <div class="reason-number">21</div>
-          <p>Porque me enseñaste que el amor de verdad está en los pequeños detalles de todos los días</p>
+          <p>Porque me enseñaste que el amor verdadero sí existe</p>
         </div>
         <div class="reason-card reveal">
           <div class="reason-number">22</div>
-          <p>Por la complicidad que tenemos, donde basta una mirada para entendernos</p>
+          <p>Porque en tus abrazos encuentro toda la paz que necesito</p>
         </div>
         <div class="reason-card reveal">
           <div class="reason-number">23</div>
-          <p>Porque extrañarte me recuerda lo afortunado que soy de tener alguien tan valiosa en mi vida</p>
+          <p>Por cómo nos entendemos con tan solo una mirada</p>
         </div>
         <div class="reason-card reveal">
           <div class="reason-number">24</div>
-          <p>Por la seguridad de saber que, pase lo que pase, siempre estamos en el mismo equipo</p>
+          <p>Porque contigo aprendí que amar es elegirnos incluso en los días grises</p>
         </div>
         <div class="reason-card reveal">
           <div class="reason-number">25</div>
-          <p>Porque desde aquel 29 de noviembre en que empezamos oficialmente, cada mes contigo ha sido un regalo</p>
+          <p>Por todas esas llamadas hablando sin darnos cuenta de cómo pasaba el tiempo</p>
         </div>
         <div class="reason-card reveal">
           <div class="reason-number">26</div>
-          <p>Por tu forma tan auténtica de ser y de llenar de alegría todo lo que te rodea</p>
+          <p>Por que sin importar que pase, nunca te rindes</p>
         </div>
         <div class="reason-card reveal">
           <div class="reason-number">27</div>
@@ -884,7 +950,7 @@
         </div>
         <div class="reason-card reveal">
           <div class="reason-number">28</div>
-          <p>Por todas las ganas que tengo de volver a abrazarte fuerte y seguir sumando recuerdos frente a frente</p>
+          <p>Por todas las ganas que tengo de volver a abrazarte fuerte y seguir sumando recuerdos juntos</p>
         </div>
         <div class="reason-card reveal">
           <div class="reason-number">29</div>
@@ -894,6 +960,7 @@
     </div>
   </section>
 
+
   <!-- ==================== LETTER ==================== -->
   <section class="letter-section">
     <div class="container">
@@ -902,9 +969,12 @@
           <span class="script">Para ti</span>
         </div>
         <div class="letter-body">
-          <p>Hoy se cumple un año desde que decidimos caminar juntos. Y aunque el tiempo pasa volando, siento que cada día contigo ha valido la pena.</p>
-          <p>Gracias por las risas, por la paciencia, por los abrazos inesperados y por todas esas conversaciones que se alargan hasta tarde. Gracias por ser mi lugar seguro y mi aventura favorita al mismo tiempo.</p>
-          <p>No sé qué nos depara el futuro, pero sí sé que quiero seguir descubriéndolo a tu lado. Porque contigo, hasta lo cotidiano se siente especial.</p>
+          <p>Hoy se cumple un año desde que decidimos caminar juntos. Y aunque el tiempo pasa volando, siento que cada
+            día contigo ha valido la pena.</p>
+          <p>Gracias por las risas, por la paciencia, por los abrazos inesperados y por todas esas conversaciones que se
+            alargan hasta tarde. Gracias por ser mi lugar seguro y mi aventura favorita al mismo tiempo.</p>
+          <p>No sé qué nos depara el futuro, pero sí sé que quiero seguir descubriéndolo a tu lado. Porque contigo,
+            hasta lo cotidiano se siente especial.</p>
           <p>Feliz primer año, mi amor. Que vengan muchos más.</p>
         </div>
         <div class="letter-signature">Con todo mi cariño</div>
@@ -918,7 +988,7 @@
       <div class="section-header reveal">
         <span class="script">Recuerdos</span>
         <h2>Pequeños pedazos de nosotros</h2>
-        <p>Aquí puedes poner nuestras fotos favoritas del año.</p>
+        <p>Estos son recuerdos de algunos grandes momentos que tuvimos juntos</p>
       </div>
 
       <div class="gallery-grid">
@@ -996,7 +1066,7 @@
       <h2>Y esto…</h2>
       <span class="script">apenas comienza</span>
       <p class="final-message">
-        Gracias por este año. Por cada momento bonito que construimos juntos.  
+        Gracias por este año. Por cada momento bonito que construimos juntos.
         Te elijo hoy, mañana y todos los días que vengan.
       </p>
       <button class="btn-love" id="loveBtn">
@@ -1084,29 +1154,13 @@
       }, 150);
     });
 
-    // ========== MUSIC BUTTON (placeholder) ==========
-    const musicBtn = document.getElementById('musicBtn');
-    let isPlaying = false;
-
-    musicBtn.addEventListener('click', () => {
-      isPlaying = !isPlaying;
-      musicBtn.classList.toggle('playing', isPlaying);
-      musicBtn.textContent = isPlaying ? '🔊' : '🎵';
-
-      // Aquí puedes conectar un <audio> real si quieres.
-      // Ejemplo:
-      // const audio = document.getElementById('bgMusic');
-      // isPlaying ? audio.play() : audio.pause();
-      alert(isPlaying 
-        ? '¡Pon aquí tu canción favorita! (agrega un <audio> en el HTML)' 
-        : 'Música pausada');
-    });
 
     // Smooth scroll for the main button
-    document.querySelector('.btn-main').addEventListener('click', function(e) {
+    document.querySelector('.btn-main').addEventListener('click', function (e) {
       e.preventDefault();
       document.querySelector('#historia').scrollIntoView({ behavior: 'smooth' });
     });
   </script>
 </body>
+
 </html>
