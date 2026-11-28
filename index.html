@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Salome & Deivi — 1 Año Juntos ❤️</title>
+  <title>Salomé & Deivi — 1 Año Juntos ❤️</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
@@ -13,16 +13,11 @@
   <style>
     :root {
       --rose: #c9b1e0;
-      /* lila medio */
       --rose-deep: #9b7bb8;
-      /* lila profundo */
       --blush: #f0e9f8;
-      /* lila muy claro */
       --cream: #f5f0fa;
-      /* fondo principal lila suave */
       --gold: #c9a87c;
       --wine: #6b4c8a;
-      /* lila oscuro para títulos */
       --text: #3a2d4a;
       --soft: #ebe4f5;
     }
@@ -158,6 +153,8 @@
     .hero-content {
       position: relative;
       z-index: 2;
+      width: 100%;
+      max-width: 680px;
     }
 
     .anniversary-badge {
@@ -191,21 +188,76 @@
     }
 
     .hero-subtitle {
-      font-size: 1.25rem;
+      font-size: 1.2rem;
       color: var(--text);
       opacity: 0.85;
       max-width: 480px;
-      margin: 20px auto 40px;
+      margin: 20px auto 25px;
       font-weight: 300;
       animation: fadeInUp 1.2s ease 0.4s both;
     }
 
     .hero-names {
       font-family: 'Great Vibes', cursive;
-      font-size: 2.2rem;
+      font-size: 2.3rem;
       color: var(--gold);
-      margin-bottom: 40px;
+      margin-bottom: 25px;
       animation: fadeInUp 1.2s ease 0.5s both;
+    }
+
+    /* ========== LOVE TIMER ========== */
+    .love-timer-wrapper {
+      margin: 0 auto 38px;
+      animation: fadeInUp 1.2s ease 0.6s both;
+    }
+
+    .timer-label {
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: var(--rose-deep);
+      margin-bottom: 12px;
+      font-weight: 500;
+    }
+
+    .love-timer {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .timer-box {
+      background: rgba(255, 255, 255, 0.78);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(201, 177, 224, 0.45);
+      border-radius: 16px;
+      padding: 12px 16px;
+      min-width: 78px;
+      box-shadow: 0 8px 25px rgba(155, 123, 184, 0.12);
+      transition: transform 0.3s ease;
+    }
+
+    .timer-box:hover {
+      transform: translateY(-3px);
+    }
+
+    .timer-value {
+      display: block;
+      font-family: 'Playfair Display', serif;
+      font-size: 1.75rem;
+      font-weight: 700;
+      color: var(--wine);
+      line-height: 1.2;
+    }
+
+    .timer-unit {
+      display: block;
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: var(--rose-deep);
+      margin-top: 2px;
     }
 
     .btn-main {
@@ -221,7 +273,7 @@
       font-size: 1rem;
       box-shadow: 0 10px 30px rgba(155, 123, 184, 0.35);
       transition: all 0.4s ease;
-      animation: fadeInUp 1.2s ease 0.7s both;
+      animation: fadeInUp 1.2s ease 0.75s both;
       border: none;
       cursor: pointer;
     }
@@ -233,7 +285,7 @@
 
     .scroll-hint {
       position: absolute;
-      bottom: 30px;
+      bottom: 22px;
       left: 50%;
       transform: translateX(-50%);
       font-size: 0.8rem;
@@ -392,6 +444,186 @@
       font-weight: 300;
     }
 
+    /* ========== DISTANCE CARD ========== */
+    .distance-section {
+      background: #f0e9f8;
+      padding: 40px 20px 70px;
+    }
+
+    .distance-card {
+      max-width: 740px;
+      margin: 0 auto;
+      background: rgba(255, 255, 255, 0.92);
+      backdrop-filter: blur(10px);
+      border-radius: 24px;
+      padding: 38px 32px;
+      box-shadow: 0 12px 40px rgba(155, 123, 184, 0.12);
+      border: 1px solid rgba(201, 177, 224, 0.35);
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .distance-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 5px;
+      background: linear-gradient(90deg, var(--rose), var(--gold), var(--rose));
+    }
+
+    .distance-header .script {
+      font-size: 1.9rem;
+      color: var(--rose-deep);
+      display: block;
+      margin-bottom: 4px;
+    }
+
+    .distance-header h3 {
+      font-size: 1.5rem;
+      color: var(--wine);
+      margin-bottom: 28px;
+    }
+
+    .distance-route {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      margin-bottom: 26px;
+    }
+
+    .city-box {
+      flex: 1.1;
+      background: var(--cream);
+      padding: 18px 14px;
+      border-radius: 18px;
+      border: 1px solid rgba(201, 177, 224, 0.25);
+    }
+
+    .city-flag {
+      font-size: 1.5rem;
+      margin-bottom: 4px;
+    }
+
+    .city-name {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: var(--wine);
+      line-height: 1.25;
+    }
+
+    .city-sub {
+      display: block;
+      font-family: 'Poppins', sans-serif;
+      font-size: 0.78rem;
+      font-weight: 400;
+      color: #7a5a65;
+    }
+
+    .city-person {
+      font-size: 0.78rem;
+      color: var(--rose-deep);
+      margin: 4px 0 8px;
+      font-weight: 500;
+    }
+
+    .city-time {
+      font-size: 1.25rem;
+      font-weight: 600;
+      color: var(--text);
+      font-variant-numeric: tabular-nums;
+      letter-spacing: 0.5px;
+    }
+
+    .city-date-small {
+      font-size: 0.72rem;
+      color: #7a5a65;
+      margin-top: 2px;
+      text-transform: capitalize;
+    }
+
+    .route-middle {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .km-badge {
+      background: linear-gradient(135deg, var(--rose-deep), #7a5a9a);
+      color: white;
+      padding: 6px 16px;
+      border-radius: 50px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      box-shadow: 0 6px 18px rgba(155, 123, 184, 0.3);
+      white-space: nowrap;
+    }
+
+    .route-line {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      height: 24px;
+    }
+
+    .route-line::before,
+    .route-line::after {
+      content: '';
+      flex: 1;
+      border-top: 2px dashed var(--gold);
+    }
+
+    .route-heart {
+      font-size: 1.2rem;
+      line-height: 1;
+      animation: heartbeat 1.6s infinite;
+    }
+
+    @keyframes heartbeat {
+      0%, 100% {
+        transform: scale(1);
+      }
+      25% {
+        transform: scale(1.22);
+      }
+      50% {
+        transform: scale(1);
+      }
+      75% {
+        transform: scale(1.15);
+      }
+    }
+
+    .route-sub {
+      font-size: 0.75rem;
+      color: var(--gold);
+      font-weight: 500;
+      letter-spacing: 0.5px;
+    }
+
+    .distance-quote {
+      font-size: 0.95rem;
+      color: #6b4f58;
+      font-weight: 300;
+      max-width: 520px;
+      margin: 0 auto;
+      padding-top: 18px;
+      border-top: 1px solid rgba(201, 177, 224, 0.25);
+    }
+
+    .distance-quote strong {
+      color: var(--wine);
+      font-weight: 600;
+    }
+
     /* ========== REASONS ========== */
     .reasons-section {
       background: linear-gradient(180deg, #f0e9f8 0%, var(--cream) 100%);
@@ -444,24 +676,133 @@
       font-weight: 400;
     }
 
-    /* ========== LETTER ========== */
+    /* ========== INTERACTIVE ENVELOPE & LETTER ========== */
     .letter-section {
       background: var(--cream);
       padding: 100px 20px;
     }
 
+    .envelope-container {
+      max-width: 640px;
+      margin: 0 auto;
+    }
+
+    .envelope-box {
+      position: relative;
+      background: linear-gradient(145deg, #e7daf5 0%, #d8c3ee 100%);
+      border-radius: 18px;
+      padding: 58px 28px 46px;
+      text-align: center;
+      box-shadow: 0 16px 45px rgba(155, 123, 184, 0.22);
+      border: 1px solid rgba(201, 177, 224, 0.6);
+      cursor: pointer;
+      overflow: hidden;
+      transition: transform 0.35s ease, box-shadow 0.35s ease;
+    }
+
+    .envelope-box:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 22px 55px rgba(155, 123, 184, 0.28);
+    }
+
+    .envelope-flap {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 120px;
+      background: linear-gradient(180deg, #cbb1e4 0%, #decbf1 100%);
+      clip-path: polygon(0 0, 50% 92%, 100% 0);
+      transform-origin: top center;
+      transition: transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+      z-index: 2;
+      box-shadow: 0 6px 15px rgba(107, 76, 138, 0.12);
+    }
+
+    .envelope-box.opened .envelope-flap {
+      transform: rotateX(180deg);
+    }
+
+    .wax-seal {
+      position: relative;
+      z-index: 3;
+      width: 78px;
+      height: 78px;
+      margin: 26px auto 18px;
+      border-radius: 50%;
+      background: radial-gradient(circle at 30% 30%, #e5c697, #b9935f 75%, #9a7544 100%);
+      box-shadow:
+        0 6px 20px rgba(154, 117, 68, 0.45),
+        inset 0 0 0 4px rgba(255, 248, 232, 0.35);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Great Vibes', cursive;
+      font-size: 1.65rem;
+      color: #fffaf0;
+      text-shadow: 0 1px 2px rgba(90, 62, 26, 0.5);
+      transition: transform 0.35s ease;
+    }
+
+    .envelope-box:hover .wax-seal {
+      transform: scale(1.08) rotate(-4deg);
+    }
+
+    .envelope-title {
+      position: relative;
+      z-index: 3;
+      font-family: 'Playfair Display', serif;
+      font-size: 1.45rem;
+      color: var(--wine);
+      margin-bottom: 6px;
+    }
+
+    .envelope-hint {
+      position: relative;
+      z-index: 3;
+      font-size: 0.85rem;
+      color: var(--wine);
+      opacity: 0.85;
+      background: rgba(255, 255, 255, 0.65);
+      display: inline-block;
+      padding: 6px 18px;
+      border-radius: 50px;
+      margin-top: 6px;
+    }
+
+    .envelope-container.is-open .envelope-box {
+      display: none;
+    }
+
     .letter-wrapper {
+      display: none;
       max-width: 640px;
       margin: 0 auto;
       background: #fffef9;
       padding: 50px 40px 60px;
-      border-radius: 4px;
+      border-radius: 8px;
       box-shadow:
         0 2px 4px rgba(0, 0, 0, 0.02),
-        0 10px 40px rgba(155, 123, 184, 0.1),
-        inset 0 0 0 1px rgba(212, 165, 116, 0.15);
+        0 14px 45px rgba(155, 123, 184, 0.14),
+        inset 0 0 0 1px rgba(212, 165, 116, 0.2);
       position: relative;
-      transform: rotate(-0.5deg);
+      animation: unfoldLetter 0.85s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+    }
+
+    .envelope-container.is-open .letter-wrapper {
+      display: block;
+    }
+
+    @keyframes unfoldLetter {
+      0% {
+        opacity: 0;
+        transform: translateY(35px) scale(0.95);
+      }
+
+      100% {
+        opacity: 1;
+        transform: translateY(0) scale(1) rotate(-0.4deg);
+      }
     }
 
     .letter-wrapper::before {
@@ -472,7 +813,7 @@
       right: 0;
       height: 8px;
       background: linear-gradient(90deg, var(--rose), var(--gold), var(--rose));
-      border-radius: 4px 4px 0 0;
+      border-radius: 8px 8px 0 0;
     }
 
     .letter-header {
@@ -503,6 +844,24 @@
       font-family: 'Great Vibes', cursive;
       font-size: 2rem;
       color: var(--rose-deep);
+    }
+
+    .btn-close-letter {
+      display: inline-block;
+      margin-top: 24px;
+      background: transparent;
+      border: 1px solid rgba(201, 177, 224, 0.55);
+      color: var(--rose-deep);
+      padding: 6px 16px;
+      border-radius: 50px;
+      font-size: 0.78rem;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .btn-close-letter:hover {
+      background: var(--blush);
+      color: var(--wine);
     }
 
     /* ========== GALLERY ========== */
@@ -549,19 +908,186 @@
     .gallery-item .overlay {
       position: absolute;
       inset: 0;
-      background: rgba(139, 58, 74, 0.4);
+      background: rgba(107, 76, 138, 0.42);
       display: flex;
+      flex-direction: column;
       align-items: center;
       justify-content: center;
+      gap: 6px;
       opacity: 0;
       transition: opacity 0.3s ease;
       color: white;
-      font-size: 1.8rem;
       pointer-events: none;
+    }
+
+    .gallery-item .overlay-icon {
+      font-size: 1.7rem;
+    }
+
+    .gallery-item .overlay-date {
+      font-size: 0.78rem;
+      letter-spacing: 1px;
+      background: rgba(255, 255, 255, 0.22);
+      backdrop-filter: blur(4px);
+      padding: 4px 12px;
+      border-radius: 50px;
     }
 
     .gallery-item:hover .overlay {
       opacity: 1;
+    }
+
+    /* ========== LIGHTBOX MODAL ========== */
+    .lightbox {
+      position: fixed;
+      inset: 0;
+      background: rgba(34, 22, 48, 0.88);
+      backdrop-filter: blur(10px);
+      z-index: 10000;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      animation: fadeInLightbox 0.3s ease;
+    }
+
+    .lightbox.active {
+      display: flex;
+    }
+
+    @keyframes fadeInLightbox {
+      from {
+        opacity: 0;
+      }
+
+      to {
+        opacity: 1;
+      }
+    }
+
+    .lightbox-card {
+      position: relative;
+      max-width: 780px;
+      width: 100%;
+      background: #fffef9;
+      border-radius: 22px;
+      padding: 16px 16px 24px;
+      box-shadow: 0 25px 60px rgba(0, 0, 0, 0.45);
+      border: 1px solid rgba(201, 168, 124, 0.4);
+      text-align: center;
+      animation: scaleLightbox 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+    }
+
+    @keyframes scaleLightbox {
+      from {
+        opacity: 0;
+        transform: scale(0.92);
+      }
+
+      to {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+
+    .lightbox-img-wrap {
+      width: 100%;
+      max-height: 68vh;
+      border-radius: 14px;
+      overflow: hidden;
+      background: var(--blush);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .lightbox-img-wrap img {
+      width: 100%;
+      max-height: 68vh;
+      object-fit: contain;
+      display: block;
+    }
+
+    .lightbox-info {
+      padding: 16px 12px 0;
+    }
+
+    .lightbox-date {
+      display: inline-block;
+      font-size: 0.78rem;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: var(--gold);
+      font-weight: 600;
+      margin-bottom: 4px;
+    }
+
+    .lightbox-caption {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.08rem;
+      color: var(--wine);
+    }
+
+    .lightbox-counter {
+      font-size: 0.75rem;
+      color: #8a739e;
+      margin-top: 8px;
+    }
+
+    .lightbox-close {
+      position: absolute;
+      top: -14px;
+      right: -14px;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: white;
+      color: var(--wine);
+      border: 2px solid var(--rose);
+      font-size: 1.2rem;
+      cursor: pointer;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: transform 0.25s ease;
+    }
+
+    .lightbox-close:hover {
+      transform: scale(1.1);
+      background: var(--blush);
+    }
+
+    .lightbox-nav {
+      position: absolute;
+      top: 44%;
+      transform: translateY(-50%);
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.92);
+      color: var(--wine);
+      border: 1px solid rgba(201, 177, 224, 0.6);
+      font-size: 1.2rem;
+      cursor: pointer;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.25s ease;
+    }
+
+    .lightbox-nav:hover {
+      background: var(--rose-deep);
+      color: white;
+    }
+
+    .lightbox-prev {
+      left: 26px;
+    }
+
+    .lightbox-next {
+      right: 26px;
     }
 
     /* ========== FINAL ========== */
@@ -647,50 +1173,32 @@
       }
     }
 
-    /* Music button */
-    .music-btn {
-      position: fixed;
-      bottom: 25px;
-      right: 25px;
-      width: 52px;
-      height: 52px;
-      border-radius: 50%;
-      background: white;
-      border: 2px solid var(--rose);
-      color: var(--rose-deep);
-      font-size: 1.3rem;
-      cursor: pointer;
-      z-index: 100;
-      box-shadow: 0 6px 20px rgba(155, 123, 184, 0.25);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      transition: all 0.3s ease;
-    }
-
-    .music-btn:hover {
-      transform: scale(1.1);
-      background: var(--blush);
-    }
-
-    .music-btn.playing {
-      animation: pulse 1.5s infinite;
-    }
-
-    @keyframes pulse {
-
-      0%,
-      100% {
-        box-shadow: 0 0 0 0 rgba(155, 123, 184, 0.4);
-      }
-
-      50% {
-        box-shadow: 0 0 0 12px rgba(155, 123, 184, 0);
-      }
-    }
-
     /* Responsive */
+    @media (max-width: 650px) {
+      .distance-route {
+        flex-direction: column;
+      }
+
+      .city-box {
+        width: 100%;
+      }
+
+      .route-middle {
+        width: 100%;
+        padding: 6px 0;
+      }
+    }
+
     @media (max-width: 600px) {
+      .timer-box {
+        min-width: 68px;
+        padding: 10px 12px;
+      }
+
+      .timer-value {
+        font-size: 1.4rem;
+      }
+
       .timeline::before {
         left: 18px;
       }
@@ -707,11 +1215,24 @@
 
       .letter-wrapper {
         padding: 35px 24px 45px;
-        transform: none;
       }
 
       .letter-body {
         font-size: 1.05rem;
+      }
+
+      .lightbox-nav {
+        width: 36px;
+        height: 36px;
+        font-size: 1rem;
+      }
+
+      .lightbox-prev {
+        left: 10px;
+      }
+
+      .lightbox-next {
+        right: 10px;
       }
     }
   </style>
@@ -733,7 +1254,30 @@
       <p class="hero-subtitle">
         Vamos a explorar un poco esta aventura tan hermosa que hemos tenido este año juntos
       </p>
-      <div class="hero-names">Salome & Deivi</div>
+      <div class="hero-names">Salomé & Deivi</div>
+
+      <div class="love-timer-wrapper">
+        <div class="timer-label">Tiempo amándote sin parar</div>
+        <div class="love-timer">
+          <div class="timer-box">
+            <span class="timer-value" id="t-days">365</span>
+            <span class="timer-unit">Días</span>
+          </div>
+          <div class="timer-box">
+            <span class="timer-value" id="t-hours">00</span>
+            <span class="timer-unit">Horas</span>
+          </div>
+          <div class="timer-box">
+            <span class="timer-value" id="t-minutes">00</span>
+            <span class="timer-unit">Minutos</span>
+          </div>
+          <div class="timer-box">
+            <span class="timer-value" id="t-seconds">00</span>
+            <span class="timer-unit">Segundos</span>
+          </div>
+        </div>
+      </div>
+
       <a href="#historia" class="btn-main">
         Recuerda nuestro año 💕
       </a>
@@ -754,12 +1298,12 @@
         <div class="timeline-item reveal">
           <div class="timeline-dot">💕</div>
           <div class="timeline-card">
-            <div class="timeline-date">COMO EMPEZO TODO</div>
+            <div class="timeline-date">CÓMO EMPEZÓ TODO</div>
             <h3>Nuestra primera charla</h3>
             <p>Este día no lo puedo olvidar por nada del mundo. Recuerdo que tuvimos nuestra primera charla en el
               Chorrerón; ahí estabas tú, una pequeña y hermosa niña contando piedritas. Quise ir a hablarte, ya que
-              ambos estábamos algo solos, y fue lo mejor que pude haber hecho, porque desde ese momento todo cambio para
-              mi, y comenzo nuestra gran historia juntos</p>
+              ambos estábamos algo solos, y fue lo mejor que pude haber hecho, porque desde ese momento todo cambió para
+              mí, y comenzó nuestra gran historia juntos</p>
           </div>
         </div>
 
@@ -779,12 +1323,12 @@
         <div class="timeline-item reveal">
           <div class="timeline-dot">💋</div>
           <div class="timeline-card">
-            <div class="timeline-date">UN DIA ESPECIAL</div>
+            <div class="timeline-date">UN DÍA ESPECIAL</div>
             <h3>Nuestro primer beso</h3>
             <p>Esto pasó cuando estábamos jugando en tu casa. Ya nos habíamos dado algunos pequeños besos por
               "equivocación", pero ese día ocurrió algo increíble: tú estabas haciéndote la muertita y yo tenía que
-              buscar una manera para revivirte. La unica forma que se me paso por la cabeza para despetarte era
-              besandote, y fue lo mejor que pude haber hecho. Cuando te besé, realmente no sabía qué hacer, y lo único
+              buscar una manera para revivirte. La única forma que se me pasó por la cabeza para despertarte era
+              besándote, y fue lo mejor que pude haber hecho. Cuando te besé, realmente no sabía qué hacer, y lo único
               que me pasaba por la mente era un "te amo"</p>
           </div>
         </div>
@@ -794,7 +1338,7 @@
           <div class="timeline-card">
             <div class="timeline-date">MOMENTOS COTIDIANOS</div>
             <h3>Los días normales que se volvieron mágicos</h3>
-            <p>Esto es lo que más me fascino, porque sin importar qué hiciéramos, cada día que pasamos juntos se volvía
+            <p>Esto es lo que más me fascinó, porque sin importar qué hiciéramos, cada día que pasamos juntos se volvía
               único y especial; siempre encontrábamos la manera de divertirnos y de ser nosotros mismos. Tal vez mi
               memoria sea algo mala, pero siempre llevaré cada uno de esos días en mi corazón. Aún recuerdo cada uno de
               mis viajes a tu casa; tal vez estaba algo lejos o a veces iba un poco cansado, pero mi corazón siempre me
@@ -829,14 +1373,61 @@
     </div>
   </section>
 
+  <!-- ==================== DISTANCE CARD ==================== -->
+  <section class="distance-section">
+    <div class="container">
+      <div class="distance-card reveal">
+        <div class="distance-header">
+          <span class="script">Conectados siempre</span>
+          <h3>Dos ciudades, un mismo latido</h3>
+        </div>
+
+        <div class="distance-route">
+          <div class="city-box">
+            <div class="city-flag">🇨🇴</div>
+            <div class="city-name">
+              Popayán
+              <span class="city-sub">Cauca, Colombia</span>
+            </div>
+            <div class="city-person">Deivi</div>
+            <div class="city-time" id="time-popayan">--:--:--</div>
+            <div class="city-date-small" id="date-popayan">Cargando...</div>
+          </div>
+
+          <div class="route-middle">
+            <div class="km-badge">8.032 km</div>
+            <div class="route-line">
+              <span class="route-heart">💖</span>
+            </div>
+            <div class="route-sub">0 cm en el corazón</div>
+          </div>
+
+          <div class="city-box">
+            <div class="city-flag">🇪🇸</div>
+            <div class="city-name">
+              Legazpi
+              <span class="city-sub">Madrid, España</span>
+            </div>
+            <div class="city-person">Salomé</div>
+            <div class="city-time" id="time-madrid">--:--:--</div>
+            <div class="city-date-small" id="date-madrid">Cargando...</div>
+          </div>
+        </div>
+
+        <p class="distance-quote">
+          Aunque nuestros relojes marquen horas distintas y un océano nos separe, <strong>siempre estamos mirando el mismo cielo</strong> y contando los días para volver a abrazarnos.
+        </p>
+      </div>
+    </div>
+  </section>
+
   <!-- ==================== REASONS ==================== -->
   <section class="reasons-section">
-    <section class="reasons-section">
     <div class="container">
       <div class="section-header reveal">
         <span class="script">Porque sí</span>
         <h2>Razones por las que te elijo</h2>
-        <p>Existen una y mil razones por las que te elijo cada día, pero aquí te van 29 por cada 29 nuestro.</p>
+        <p>Existen una y mil razones por las que te elijo cada día, pero aquí te van 29 por nuestro 29</p>
       </div>
 
       <div class="reasons-grid">
@@ -942,7 +1533,7 @@
         </div>
         <div class="reason-card reveal">
           <div class="reason-number">26</div>
-          <p>Por que sin importar que pase, nunca te rindes</p>
+          <p>Porque sin importar qué pase, nunca te rindes</p>
         </div>
         <div class="reason-card reveal">
           <div class="reason-number">27</div>
@@ -960,24 +1551,37 @@
     </div>
   </section>
 
-
-  <!-- ==================== LETTER ==================== -->
+  <!-- ==================== INTERACTIVE LETTER ==================== -->
   <section class="letter-section">
     <div class="container">
-      <div class="letter-wrapper reveal">
-        <div class="letter-header">
-          <span class="script">Para ti</span>
+      <div class="envelope-container reveal" id="envelopeContainer">
+        <!-- Closed Envelope -->
+        <div class="envelope-box" id="envelopeBox" onclick="openLetter()">
+          <div class="envelope-flap"></div>
+          <div class="wax-seal">S & D</div>
+          <h3 class="envelope-title">Una carta para ti, mi amor</h3>
+          <span class="envelope-hint">✉️ Toca el sello dorado para abrir</span>
         </div>
-        <div class="letter-body">
-          <p>Hoy se cumple un año desde que decidimos caminar juntos. Y aunque el tiempo pasa volando, siento que cada
-            día contigo ha valido la pena.</p>
-          <p>Gracias por las risas, por la paciencia, por los abrazos inesperados y por todas esas conversaciones que se
-            alargan hasta tarde. Gracias por ser mi lugar seguro y mi aventura favorita al mismo tiempo.</p>
-          <p>No sé qué nos depara el futuro, pero sí sé que quiero seguir descubriéndolo a tu lado. Porque contigo,
-            hasta lo cotidiano se siente especial.</p>
-          <p>Feliz primer año, mi amor. Que vengan muchos más.</p>
+
+        <!-- Open Letter -->
+        <div class="letter-wrapper">
+          <div class="letter-header">
+            <span class="script">Para ti</span>
+          </div>
+          <div class="letter-body">
+            <p>Hoy se cumple un año desde que decidimos caminar juntos. Y aunque el tiempo pasa volando, siento que cada
+              día contigo ha valido la pena.</p>
+            <p>Gracias por las risas, por la paciencia, por los abrazos inesperados y por todas esas conversaciones que se
+              alargan hasta tarde. Gracias por ser mi lugar seguro y mi aventura favorita al mismo tiempo.</p>
+            <p>No sé qué nos depara el futuro, pero sí sé que quiero seguir descubriéndolo a tu lado. Porque contigo,
+              hasta lo cotidiano se siente especial.</p>
+            <p>Feliz primer año, mi amor. Que vengan muchos más.</p>
+          </div>
+          <div class="letter-signature">Con todo mi cariño</div>
+          <div style="text-align: center;">
+            <button class="btn-close-letter" onclick="closeLetter()">Volver a guardar en el sobre ✉️</button>
+          </div>
         </div>
-        <div class="letter-signature">Con todo mi cariño</div>
       </div>
     </div>
   </section>
@@ -988,77 +1592,142 @@
       <div class="section-header reveal">
         <span class="script">Recuerdos</span>
         <h2>Pequeños pedazos de nosotros</h2>
-        <p>Estos son recuerdos de algunos grandes momentos que tuvimos juntos</p>
+        <p>Toca cualquier foto para verla en grande y recordar ese momento</p>
       </div>
 
-      <div class="gallery-grid">
-        <div class="gallery-item reveal">
+      <div class="gallery-grid" id="galleryGrid">
+        <div class="gallery-item reveal" data-date="Abril 2025" data-caption="Donde empezó nuestra historia">
           <img src="fotos/3.jpg" alt="Recuerdo 1" loading="lazy">
-          <div class="overlay">❤️</div>
+          <div class="overlay">
+            <span class="overlay-icon">🔍</span>
+            <span class="overlay-date">Abril 2025</span>
+          </div>
         </div>
-        <div class="gallery-item reveal">
+        <div class="gallery-item reveal" data-date="Mayo 2025" data-caption="">
           <img src="fotos/34.png" alt="Recuerdo 2" loading="lazy">
-          <div class="overlay">❤️</div>
+          <div class="overlay">
+            <span class="overlay-icon">🔍</span>
+            <span class="overlay-date">Mayo 2025</span>
+          </div>
         </div>
-        <div class="gallery-item reveal">
+        <div class="gallery-item reveal" data-date="Junio 2025" data-caption="">
           <img src="fotos/15.jpg" alt="Recuerdo 3" loading="lazy">
-          <div class="overlay">❤️</div>
+          <div class="overlay">
+            <span class="overlay-icon">🔍</span>
+            <span class="overlay-date">Junio 2025</span>
+          </div>
         </div>
-        <div class="gallery-item reveal">
+        <div class="gallery-item reveal" data-date="Julio 2025" data-caption="">
           <img src="fotos/14.jpg" alt="Recuerdo 4" loading="lazy">
-          <div class="overlay">❤️</div>
+          <div class="overlay">
+            <span class="overlay-icon">🔍</span>
+            <span class="overlay-date">Julio 2025</span>
+          </div>
         </div>
-        <div class="gallery-item reveal">
+        <div class="gallery-item reveal" data-date="Agosto 2025" data-caption="">
           <img src="fotos/5.jpg" alt="Recuerdo 5" loading="lazy">
-          <div class="overlay">❤️</div>
+          <div class="overlay">
+            <span class="overlay-icon">🔍</span>
+            <span class="overlay-date">Agosto 2025</span>
+          </div>
         </div>
-        <div class="gallery-item reveal">
+        <div class="gallery-item reveal" data-date="Septiembre 2025" data-caption="">
           <img src="fotos/16.jpg" alt="Recuerdo 6" loading="lazy">
-          <div class="overlay">❤️</div>
+          <div class="overlay">
+            <span class="overlay-icon">🔍</span>
+            <span class="overlay-date">Septiembre 2025</span>
+          </div>
         </div>
-        <div class="gallery-item reveal">
+        <div class="gallery-item reveal" data-date="Octubre 2025" data-caption="">
           <img src="fotos/17.jpg" alt="Recuerdo 7" loading="lazy">
-          <div class="overlay">❤️</div>
+          <div class="overlay">
+            <span class="overlay-icon">🔍</span>
+            <span class="overlay-date">Octubre 2025</span>
+          </div>
         </div>
-        <div class="gallery-item reveal">
+        <div class="gallery-item reveal" data-date="29 de Noviembre 2025" data-caption="El día que dijimos que sí">
           <img src="fotos/18.jpg" alt="Recuerdo 8" loading="lazy">
-          <div class="overlay">❤️</div>
+          <div class="overlay">
+            <span class="overlay-icon">🔍</span>
+            <span class="overlay-date">29 de Noviembre 2025</span>
+          </div>
         </div>
-        <div class="gallery-item reveal">
+        <div class="gallery-item reveal" data-date="Diciembre 2025" data-caption="">
           <img src="fotos/23.jpg" alt="Recuerdo 9" loading="lazy">
-          <div class="overlay">❤️</div>
+          <div class="overlay">
+            <span class="overlay-icon">🔍</span>
+            <span class="overlay-date">Diciembre 2025</span>
+          </div>
         </div>
-        <div class="gallery-item reveal">
+        <div class="gallery-item reveal" data-date="Enero 2026" data-caption="">
           <img src="fotos/35.jpg" alt="Recuerdo 10" loading="lazy">
-          <div class="overlay">❤️</div>
+          <div class="overlay">
+            <span class="overlay-icon">🔍</span>
+            <span class="overlay-date">Enero 2026</span>
+          </div>
         </div>
-        <div class="gallery-item reveal">
+        <div class="gallery-item reveal" data-date="Febrero 2026" data-caption="">
           <img src="fotos/11.jpg" alt="Recuerdo 11" loading="lazy">
-          <div class="overlay">❤️</div>
+          <div class="overlay">
+            <span class="overlay-icon">🔍</span>
+            <span class="overlay-date">Febrero 2026</span>
+          </div>
         </div>
-        <div class="gallery-item reveal">
+        <div class="gallery-item reveal" data-date="Marzo 2026" data-caption="">
           <img src="fotos/2.jpg" alt="Recuerdo 12" loading="lazy">
-          <div class="overlay">❤️</div>
+          <div class="overlay">
+            <span class="overlay-icon">🔍</span>
+            <span class="overlay-date">Marzo 2026</span>
+          </div>
         </div>
-        <div class="gallery-item reveal">
+        <div class="gallery-item reveal" data-date="Abril 2026" data-caption="">
           <img src="fotos/13.jpg" alt="Recuerdo 13" loading="lazy">
-          <div class="overlay">❤️</div>
+          <div class="overlay">
+            <span class="overlay-icon">🔍</span>
+            <span class="overlay-date">Abril 2026</span>
+          </div>
         </div>
-        <div class="gallery-item reveal">
+        <div class="gallery-item reveal" data-date="Mayo 2026" data-caption="">
           <img src="fotos/27.jpg" alt="Recuerdo 14" loading="lazy">
-          <div class="overlay">❤️</div>
+          <div class="overlay">
+            <span class="overlay-icon">🔍</span>
+            <span class="overlay-date">Mayo 2026</span>
+          </div>
         </div>
-        <div class="gallery-item reveal">
+        <div class="gallery-item reveal" data-date="Junio 2026" data-caption="">
           <img src="fotos/28.jpg" alt="Recuerdo 15" loading="lazy">
-          <div class="overlay">❤️</div>
+          <div class="overlay">
+            <span class="overlay-icon">🔍</span>
+            <span class="overlay-date">Junio 2026</span>
+          </div>
         </div>
-        <div class="gallery-item reveal">
+        <div class="gallery-item reveal" data-date="29 de Noviembre 2026" data-caption="Nuestro primer año juntos ❤️">
           <img src="fotos/29.jpg" alt="Recuerdo 16" loading="lazy">
-          <div class="overlay">❤️</div>
+          <div class="overlay">
+            <span class="overlay-icon">🔍</span>
+            <span class="overlay-date">29 de Noviembre 2026</span>
+          </div>
         </div>
       </div>
     </div>
   </section>
+
+  <!-- ==================== LIGHTBOX MODAL ==================== -->
+  <div class="lightbox" id="lightbox" onclick="closeLightboxOnBg(event)">
+    <button class="lightbox-nav lightbox-prev" onclick="changeSlide(-1)" aria-label="Anterior">❮</button>
+    <div class="lightbox-card">
+      <button class="lightbox-close" onclick="closeLightbox()" aria-label="Cerrar">✕</button>
+      <div class="lightbox-img-wrap">
+        <img id="lightboxImg" src="" alt="Recuerdo ampliado">
+      </div>
+      <div class="lightbox-info">
+        <div class="lightbox-date" id="lightboxDate"></div>
+        <p class="lightbox-caption" id="lightboxCaption"></p>
+        <div class="lightbox-counter" id="lightboxCounter"></div>
+      </div>
+    </div>
+    <button class="lightbox-nav lightbox-next" onclick="changeSlide(1)" aria-label="Siguiente">❯</button>
+  </div>
 
   <!-- ==================== FINAL ==================== -->
   <section class="final-section">
@@ -1076,6 +1745,63 @@
   </section>
 
   <script>
+    // ========== LOVE TIMER & LIVE WORLD CLOCKS ==========
+    const startDate = new Date('2025-11-29T00:00:00-05:00').getTime();
+
+    const popayanTimeFmt = new Intl.DateTimeFormat('es-CO', {
+      timeZone: 'America/Bogota',
+      hour: '2-digit',
+      minute: '2-digit',
+      second: '2-digit',
+      hour12: true
+    });
+
+    const popayanDateFmt = new Intl.DateTimeFormat('es-CO', {
+      timeZone: 'America/Bogota',
+      weekday: 'short',
+      day: 'numeric',
+      month: 'short'
+    });
+
+    const madridTimeFmt = new Intl.DateTimeFormat('es-ES', {
+      timeZone: 'Europe/Madrid',
+      hour: '2-digit',
+      minute: '2-digit',
+      second: '2-digit',
+      hour12: true
+    });
+
+    const madridDateFmt = new Intl.DateTimeFormat('es-ES', {
+      timeZone: 'Europe/Madrid',
+      weekday: 'short',
+      day: 'numeric',
+      month: 'short'
+    });
+
+    function updateClocks() {
+      const now = new Date();
+      const diff = Math.max(0, now.getTime() - startDate);
+
+      const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
+      const minutes = Math.floor((diff / (1000 * 60)) % 60);
+      const seconds = Math.floor((diff / 1000) % 60);
+
+      document.getElementById('t-days').textContent = days;
+      document.getElementById('t-hours').textContent = String(hours).padStart(2, '0');
+      document.getElementById('t-minutes').textContent = String(minutes).padStart(2, '0');
+      document.getElementById('t-seconds').textContent = String(seconds).padStart(2, '0');
+
+      document.getElementById('time-popayan').textContent = popayanTimeFmt.format(now);
+      document.getElementById('date-popayan').textContent = popayanDateFmt.format(now);
+
+      document.getElementById('time-madrid').textContent = madridTimeFmt.format(now);
+      document.getElementById('date-madrid').textContent = madridDateFmt.format(now);
+    }
+
+    updateClocks();
+    setInterval(updateClocks, 1000);
+
     // ========== FLOATING HEARTS ==========
     const heartsContainer = document.getElementById('hearts');
     const heartEmojis = ['❤️', '💕', '💗', '💖', '💘', '💝', '🩷'];
@@ -1095,12 +1821,115 @@
       }, 16000);
     }
 
-    // Create initial hearts
     for (let i = 0; i < 12; i++) {
       setTimeout(createHeart, i * 400);
     }
-    // Keep creating
     setInterval(createHeart, 900);
+
+    // ========== ENVELOPE OPEN / CLOSE ==========
+    function openLetter() {
+      const box = document.getElementById('envelopeBox');
+      const container = document.getElementById('envelopeContainer');
+      if (box.classList.contains('opened')) return;
+
+      box.classList.add('opened');
+      const rect = box.getBoundingClientRect();
+      spawnBurst(rect.left + rect.width / 2, rect.top + rect.height / 2, 18);
+
+      setTimeout(() => {
+        container.classList.add('is-open');
+      }, 520);
+    }
+
+    function closeLetter() {
+      const box = document.getElementById('envelopeBox');
+      const container = document.getElementById('envelopeContainer');
+      container.classList.remove('is-open');
+      box.classList.remove('opened');
+    }
+
+    // ========== GALLERY LIGHTBOX ==========
+    const galleryItems = Array.from(document.querySelectorAll('.gallery-item'));
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightboxImg');
+    const lightboxDate = document.getElementById('lightboxDate');
+    const lightboxCaption = document.getElementById('lightboxCaption');
+    const lightboxCounter = document.getElementById('lightboxCounter');
+    let currentSlide = 0;
+
+    galleryItems.forEach((item, index) => {
+      item.addEventListener('click', () => {
+        openLightbox(index);
+      });
+    });
+
+    function openLightbox(index) {
+      currentSlide = index;
+      updateLightboxContent();
+      lightbox.classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeLightbox() {
+      lightbox.classList.remove('active');
+      document.body.style.overflow = '';
+    }
+
+    function closeLightboxOnBg(e) {
+      if (e.target === lightbox) {
+        closeLightbox();
+      }
+    }
+
+    function changeSlide(step) {
+      currentSlide = (currentSlide + step + galleryItems.length) % galleryItems.length;
+      updateLightboxContent();
+    }
+
+    function updateLightboxContent() {
+      const item = galleryItems[currentSlide];
+      const img = item.querySelector('img');
+      const date = item.getAttribute('data-date') || '';
+      const caption = item.getAttribute('data-caption') || '';
+
+      lightboxImg.src = img.src;
+      lightboxImg.alt = img.alt;
+      lightboxDate.textContent = date;
+      lightboxDate.style.display = date ? 'inline-block' : 'none';
+      lightboxCaption.textContent = caption;
+      lightboxCaption.style.display = caption ? 'block' : 'none';
+      lightboxCounter.textContent = `${currentSlide + 1} / ${galleryItems.length}`;
+    }
+
+    document.addEventListener('keydown', (e) => {
+      if (!lightbox.classList.contains('active')) return;
+      if (e.key === 'Escape') closeLightbox();
+      if (e.key === 'ArrowRight') changeSlide(1);
+      if (e.key === 'ArrowLeft') changeSlide(-1);
+    });
+
+    // ========== HEART BURST HELPER ==========
+    function spawnBurst(centerX, centerY, count = 24) {
+      for (let i = 0; i < count; i++) {
+        const heart = document.createElement('div');
+        heart.className = 'burst-heart';
+        heart.textContent = heartEmojis[Math.floor(Math.random() * heartEmojis.length)];
+        heart.style.left = centerX + 'px';
+        heart.style.top = centerY + 'px';
+
+        const angle = (i / count) * Math.PI * 2;
+        const distance = 70 + Math.random() * 130;
+        const tx = Math.cos(angle) * distance;
+        const ty = Math.sin(angle) * distance - 40;
+
+        heart.style.setProperty('--tx', tx + 'px');
+        heart.style.setProperty('--ty', ty + 'px');
+        heart.style.setProperty('--rot', (Math.random() * 360) + 'deg');
+
+        document.body.appendChild(heart);
+        setTimeout(() => heart.remove(), 1800);
+      }
+    }
 
     // ========== SCROLL REVEAL ==========
     const reveals = document.querySelectorAll('.reveal');
@@ -1121,39 +1950,15 @@
     // ========== LOVE BUTTON BURST ==========
     const loveBtn = document.getElementById('loveBtn');
 
-    loveBtn.addEventListener('click', (e) => {
+    loveBtn.addEventListener('click', () => {
       const rect = loveBtn.getBoundingClientRect();
-      const centerX = rect.left + rect.width / 2;
-      const centerY = rect.top + rect.height / 2;
+      spawnBurst(rect.left + rect.width / 2, rect.top + rect.height / 2, 28);
 
-      for (let i = 0; i < 28; i++) {
-        const heart = document.createElement('div');
-        heart.className = 'burst-heart';
-        heart.textContent = heartEmojis[Math.floor(Math.random() * heartEmojis.length)];
-        heart.style.left = centerX + 'px';
-        heart.style.top = centerY + 'px';
-
-        const angle = (i / 28) * Math.PI * 2;
-        const distance = 80 + Math.random() * 140;
-        const tx = Math.cos(angle) * distance;
-        const ty = Math.sin(angle) * distance - 40;
-
-        heart.style.setProperty('--tx', tx + 'px');
-        heart.style.setProperty('--ty', ty + 'px');
-        heart.style.setProperty('--rot', (Math.random() * 360) + 'deg');
-
-        document.body.appendChild(heart);
-
-        setTimeout(() => heart.remove(), 1800);
-      }
-
-      // Small pulse on button
       loveBtn.style.transform = 'scale(0.92)';
       setTimeout(() => {
         loveBtn.style.transform = '';
       }, 150);
     });
-
 
     // Smooth scroll for the main button
     document.querySelector('.btn-main').addEventListener('click', function (e) {
